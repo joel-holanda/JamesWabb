@@ -1,12 +1,14 @@
+import { useState } from "react"
 import Menu from "../../components/Menu/Menu"
-import Options from "../../components/Options/Options.tsx"
+import Cards from "../../components/Cards/Cards.tsx"
 
+useState
 
 function Home(){
     return(
         <>
             <Menu title="ERP"/>
-            <Options />
+            <Cards />
         </>
     )
 }

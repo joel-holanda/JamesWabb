@@ -1,7 +1,8 @@
-import { SectionStyle, DivStyle } from "./OptionsStyle"
+import { SectionStyle, DivStyle } from "./CardsStyle"
 
 type Props = {
     text: string;
+    color: string;
 }
 
 function Option(props: Props){
@@ -16,10 +17,10 @@ function Options(){
     return(
     <>           
         <SectionStyle>
-            <Option text="Cadastrar"/>
-            <Option text="Vender"/>
-            <Option text="Estoque"/>
-            <Option text="Faturamento"/>
+            <Option text="Cadastrar" color="#"/>
+            <Option text="Vender" color=""/>
+            <Option text="Estoque" color=""/>
+            <Option text="Faturamento" color=""/>
         </SectionStyle>    
     </>
     )
