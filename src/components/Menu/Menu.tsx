@@ -1,20 +1,19 @@
-import { Header, TitleSyle } from "./MenuStyle"
-type Props = {
+import '../../style/global.css'
+
+
+type PropsMenu = {
     icons?: string;
     alt?: string;
     title: string;
 }
 
-function Menu(props: Props){
+function Menu(props: PropsMenu){
     return(
-        <>
-            <Header>
-                    <TitleSyle>{props.title}</TitleSyle >
-                    <img src={props.icons} alt={props.alt} />
-            </Header>
-        </>
+        <div className='bg-blue-300 flex h-[100px] items-center justify-center text-5xl'>
+           {props.title}
+           <img src={props.icons} alt={props.alt} />
+        </div>
     )
 }
-
 
 export default Menu

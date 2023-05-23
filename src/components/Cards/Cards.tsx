@@ -1,14 +1,12 @@
-import { SectionStyle, DivStyle } from "./CardsStyle"
-
+import { Link } from "react-router-dom";
 type Props = {
     text: string;
-    color: string;
 }
 
 function Option(props: Props){
     return(
         <>
-            <DivStyle>{props.text}</DivStyle>
+            {props.text}
         </>
     )
 }
@@ -16,12 +14,10 @@ function Option(props: Props){
 function Options(){
     return(
     <>           
-        <SectionStyle>
-            <Option text="Cadastrar" color="#"/>
-            <Option text="Vender" color=""/>
-            <Option text="Estoque" color=""/>
-            <Option text="Faturamento" color=""/>
-        </SectionStyle>    
+        <Link to="/cadastro"><Option text="Cadastrar"/></Link>
+        <Link to="/vender"><Option text="Vender"/></Link>
+        <Link to="/estoque"><Option text="Estoque"/></Link>
+        <Link to="/faturamento"><Option text="Faturamento"/></Link>
     </>
     )
 }

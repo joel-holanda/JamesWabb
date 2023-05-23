@@ -1,8 +1,7 @@
-import { useState } from "react"
 import Menu from "../../components/Menu/Menu"
 import Cards from "../../components/Cards/Cards.tsx"
 
-useState
+import '../../style/global.css'
 
 function Home(){
     return(
