@@ -1,7 +1,11 @@
+import Menu from '../../components/Menu/Menu'
+import RegisterProduct from '../../components/RegisterProduct/RegisterProduct'
+
 export function Register(){
   return(
     <>
-      Welcome the Register page
+      <Menu title="Cadastro de produtos"/>
+      <RegisterProduct/>
     </>
   )
 }

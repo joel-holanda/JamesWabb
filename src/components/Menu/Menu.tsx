@@ -9,7 +9,7 @@ type PropsMenu = {
 
 function Menu(props: PropsMenu){
     return(
-        <div className='bg-blue-300 flex h-[100px] items-center justify-center text-5xl'>
+        <div className='bg-[#019472] flex h-[100px] items-center justify-center text-5xl'>
            {props.title}
            <img src={props.icons} alt={props.alt} />
         </div>
